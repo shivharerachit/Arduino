@@ -1,12 +1,13 @@
 #include <WiFi.h>
 #include <HTTPClient.h>
+#include "arduino_secrets.h" 
 
 // Replace with your network credentials
-const char* ssid = "Rachit's Galaxy M21";
-const char* password = "aqly2905";
+const char* ssid = SECRET_SSID;
+const char* password = SECRET_PASS;
 
 // Replace with your ThingSpeak API key
-const char* apiKey = "57302NOQLR4TQH6M";
+const char* apiKey = SECRET_APIKEY;
 
 // Define the analog pins connected to the potentiometers
 const int potPin1 = 34; // Change this to the pin number of the first potentiometer
